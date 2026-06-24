@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[DÜKKAN ADI] — Güvenilir medikal cihaz, sarf malzeme ve sağlık ürünleri. Katalog, fiyat bilgileri, iletişim ve mağaza konumu.">
+    <meta name="theme-color" content="#0F5A5C">
+    <title>[DÜKKAN ADI] · Medikal Cihaz & Sağlık Ürünleri</title>
+
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="[DÜKKAN ADI] · Medikal Ürünler">
+    <meta property="og:description" content="Medikal cihaz, sarf malzeme ve sağlık ürünleri. Mağazamızı ziyaret edin.">
+    <meta property="og:type" content="website">
+</head>
+<body>
+
+    <!-- ============ ÜST BİLGİ ŞERİDİ ============ -->
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <div class="topbar__left">
+                <span><i class="fa-solid fa-location-dot"></i> Atatürk Cad. No: 142, İstanbul</span>
+                <span class="topbar__divider"></span>
+                <span class="hide-mobile"><i class="fa-regular fa-clock"></i> Hafta içi 08:30 – 19:00 · Cmt 09:00 – 17:00</span>
+            </div>
+            <div class="topbar__right">
+                <a href="tel:+902120000000" aria-label="Telefon"><i class="fa-solid fa-phone"></i> 0212 000 00 00</a>
+                <a href="https://wa.me/902120000000" class="topbar__wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ HEADER / NAV ============ -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#anasayfa" class="brand" aria-label="Ana Sayfa">
+                <span class="brand__mark"><i class="fa-solid fa-heart-pulse"></i></span>
+                <span class="brand__text">
+                    <span class="brand__name">DÜKKAN ADI</span>
+                    <span class="brand__sub">Medikal & Sağlık Ürünleri</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBİL NAV — header DIŞINDA, body'ye doğrudan yerleştirildi -->
+    <nav class="nav" id="nav" aria-label="Ana menü">
+        <div class="nav__head">
+            <a href="#anasayfa" class="brand" aria-label="Ana Sayfa">
+                <span class="brand__mark"><i class="fa-solid fa-heart-pulse"></i></span>
+                <span class="brand__text">
+                    <span class="brand__name">DÜKKAN ADI</span>
+                    <span class="brand__sub">Medikal & Sağlık</span>
+                </span>
+            </a>
+            <button class="nav__close" id="navClose" aria-label="Menüyü kapat">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <a href="#anasayfa" class="nav__link"><i class="fa-solid fa-house"></i> Anasayfa</a>
+        <a href="#kategoriler" class="nav__link"><i class="fa-solid fa-layer-group"></i> Kategoriler</a>
+        <a href="#urunler" class="nav__link"><i class="fa-solid fa-bag-shopping"></i> Ürünler</a>
+        <a href="#neden-biz" class="nav__link"><i class="fa-solid fa-shield-heart"></i> Neden Biz</a>
+        <a href="#iletisim" class="nav__link"><i class="fa-solid fa-location-dot"></i> İletişim</a>
+        <a href="#iletisim" class="btn btn--primary nav__cta">Mağazaya Git <i class="fa-solid fa-arrow-right"></i></a>
+
+        <div class="nav__foot">
+            <a href="tel:+902120000000" class="nav__contact"><i class="fa-solid fa-phone"></i> 0212 000 00 00</a>
+            <a href="https://wa.me/902120000000" class="nav__contact nav__contact--wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="anasayfa">
+        <div class="hero__bg"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <p class="hero__eyebrow reveal"><i class="fa-solid fa-shield-heart"></i> 1998'den beri güvenilir medikal çözümler</p>
+            <h1 class="hero__title reveal">Sağlık İçin Doğru Adres,<br><span class="text-accent">Profesyonel Medikal Ürünler</span></h1>
+            <p class="hero__lead reveal">Medikal cihazlar, ortopedi, sarf malzemeler ve evde bakım ürünlerinde geniş seçenek. Fiyatlarımızı inceleyin, ürünleri mağazamızda yakından görün.</p>
+            <div class="hero__actions reveal">
+                <a href="#urunler" class="btn btn--primary">Ürünleri İncele <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#iletisim" class="btn btn--ghost">Bize Ulaşın</a>
+            </div>
+            <div class="hero__stats reveal">
+                <div class="hero__stat"><strong>500+</strong><span>Ürün Çeşidi</span></div>
+                <span class="hero__stat-divider"></span>
+                <div class="hero__stat"><strong>25+</strong><span>Yıllık Tecrübe</span></div>
+                <span class="hero__stat-divider"></span>
+                <div class="hero__stat"><strong>10.000+</strong><span>Mutlu Müşteri</span></div>
+            </div>
+        </div>
+        <a href="#guven" class="hero__scroll" aria-label="Aşağı kaydır"><span></span></a>
+    </section>
+
+    <!-- ============ GÜVEN ŞERİDİ ============ -->
+    <section class="trust" id="guven">
+        <div class="container trust__grid">
+            <div class="trust__item reveal">
+                <i class="fa-solid fa-certificate"></i>
+                <div><strong>Yetkili & Sertifikalı</strong><span>TSE & CE belgeli ürünler</span></div>
+            </div>
+            <div class="trust__item reveal">
+                <i class="fa-solid fa-stethoscope"></i>
+                <div><strong>Uzman Kadro</strong><span>Sertifikalı satış danışmanları</span></div>
+            </div>
+            <div class="trust__item reveal">
+                <i class="fa-solid fa-truck-medical"></i>
+                <div><strong>Mağazadan Teslim</strong><span>Hemen mağazadan alın</span></div>
+            </div>
+            <div class="trust__item reveal">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <div><strong>Güvenilir Hizmet</strong><span>1998'den beri yanınızdayız</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ KATEGORİLER ============ -->
+    <section class="categories section" id="kategoriler">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Ürün Kategorileri</p>
+                <h2 class="section__title">İhtiyacınız Olan Her Şey <span class="text-accent">Tek Çatı Altında</span></h2>
+                <p class="section__lead">Medikal cihazlardan evde bakım çözümlerine kadar geniş bir yelpazede ürünlerimiz mağazamızda sizi bekliyor.</p>
+            </div>
+            <div class="categories__grid">
+                <a href="#urunler" class="cat-card reveal" data-cat="cihaz">
+                    <div class="cat-card__icon"><i class="fa-solid fa-kit-medical"></i></div>
+                    <h3>Medikal Cihazlar</h3>
+                    <p>Tansiyon, şeker, oksijen, nebulizör ve daha fazlası</p>
+                    <span class="cat-card__link">İncele <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="#urunler" class="cat-card reveal" data-cat="ortopedi">
+                    <div class="cat-card__icon"><i class="fa-solid fa-bone"></i></div>
+                    <h3>Ortopedi & Protez</h3>
+                    <p>Korse, atel, ortez, yürüyüş yardımcıları</p>
+                    <span class="cat-card__link">İncele <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="#urunler" class="cat-card reveal" data-cat="evde-bakim">
+                    <div class="cat-card__icon"><i class="fa-solid fa-bed-pulse"></i></div>
+                    <h3>Evde Bakım</h3>
+                    <p>Hastane yatağı, tekerlekli sandalye, havalı yatak</p>
+                    <span class="cat-card__link">İncele <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="#urunler" class="cat-card reveal" data-cat="sarf">
+                    <div class="cat-card__icon"><i class="fa-solid fa-bandage"></i></div>
+                    <h3>Sarf Malzemeleri</h3>
+                    <p>Sargı, steril ürünler, tek kullanımlık malzemeler</p>
+                    <span class="cat-card__link">İncele <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="#urunler" class="cat-card reveal" data-cat="anne-bebek">
+                    <div class="cat-card__icon"><i class="fa-solid fa-baby"></i></div>
+                    <h3>Anne & Bebek</h3>
+                    <p>Göğüs pompası, bebek bakım, terapi ürünleri</p>
+                    <span class="cat-card__link">İncele <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="#urunler" class="cat-card reveal" data-cat="saglik">
+                    <div class="cat-card__icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>Sağlık & Yaşam</h3>
+                    <p>Vitamin ölçer, termometre, kişisel bakım</p>
+                    <span class="cat-card__link">İncele <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ÜRÜNLER ============ -->
+    <section class="products section section--alt" id="urunler">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">Ürün Kataloğu</p>
+                <h2 class="section__title">Mağazamızdaki <span class="text-accent">Seçkin Ürünler</span></h2>
+                <p class="section__lead">Fiyatlar bilgilendirme amaçlıdır. Güncel stok ve kampanyalar için mağazamızı arayın veya ziyaret edin.</p>
+            </div>
+
+            <div class="products__bar reveal">
+                <div class="filter" id="filter" role="tablist" aria-label="Kategori filtrele">
+                    <button class="filter__btn is-active" data-filter="all">Tümü</button>
+                    <button class="filter__btn" data-filter="cihaz">Cihazlar</button>
+                    <button class="filter__btn" data-filter="ortopedi">Ortopedi</button>
+                    <button class="filter__btn" data-filter="evde-bakim">Evde Bakım</button>
+                    <button class="filter__btn" data-filter="sarf">Sarf</button>
+                    <button class="filter__btn" data-filter="anne-bebek">Anne & Bebek</button>
+                    <button class="filter__btn" data-filter="saglik">Sağlık & Yaşam</button>
+                </div>
+                <div class="products__search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="productSearch" placeholder="Ürün ara..." aria-label="Ürün ara">
+                </div>
+            </div>
+
+            <div class="products__grid" id="productsGrid">
+                <!-- Ürünler JavaScript ile yüklenir -->
+            </div>
+
+            <div class="load-more-wrap" id="loadMoreWrap">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    Daha Fazla Ürün Göster <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+
+            <p class="products__note reveal">
+                <i class="fa-solid fa-circle-info"></i>
+                Tüm fiyatlar KDV dahil, bilgilendirme amaçlıdır. Mağazada farklı model ve marka seçenekleri mevcuttur.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============ NEDEN BİZ ============ -->
+    <section class="why section" id="neden-biz">
+        <div class="container why__inner">
+            <div class="why__media reveal">
+                <div class="why__img" aria-hidden="true">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <div class="why__badge">
+                    <strong>25+</strong>
+                    <span>yıllık<br>tecrübe</span>
+                </div>
+            </div>
+            <div class="why__content reveal">
+                <p class="section__eyebrow">Neden Biz?</p>
+                <h2 class="section__title">Mağazamızı Ziyaret Ettiğinizde Farkı Anlayacaksınız</h2>
+                <p class="section__lead">Tek amacımız doğru ürünü, doğru bilgiyle size sunmak. Gelin, ürünleri yakından inceleyin, uzman kadromuzla çeker danışın.</p>
+                <ul class="why__list">
+                    <li><i class="fa-solid fa-circle-check"></i><div><strong>Uzman Danışmanlık</strong><p>Sağlık ekibimiz ürün seçiminde size yardımcı olur.</p></div></li>
+                    <li><i class="fa-solid fa-circle-check"></i><div><strong>Geniş Ürün Yelpazesi</strong><p>500'ü aşkın ürün, farklı marka ve fiyat seçeneği.</p></div></li>
+                    <li><i class="fa-solid fa-circle-check"></i><div><strong>Şeffaf Fiyatlandırma</strong><p>Net fiyat, gizli maliyet yok. Her zaman güncel.</p></div></li>
+                    <li><i class="fa-solid fa-circle-check"></i><div><strong>Merkezi Konum</strong><p>Ulaşımı kolay, otoparklı mağazamıza davetlisiniz.</p></div></li>
+                </ul>
+                <a href="#iletisim" class="btn btn--primary">Mağazayı Ziyaret Et <i class="fa-solid fa-location-dot"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+        <div class="container cta__inner reveal">
+            <div>
+                <h2>Aradığınız Ürünü Bulamadınız mı?</h2>
+                <p>Mağazamızda çok daha fazlası var. Bizi arayın, uzman ekibimiz yardımcı olsun.</p>
+            </div>
+            <div class="cta__actions">
+                <a href="tel:+902120000000" class="btn btn--light"><i class="fa-solid fa-phone"></i> 0212 000 00 00</a>
+                <a href="https://wa.me/902120000000" class="btn btn--ghost-light"><i class="fa-brands fa-whatsapp"></i> WhatsApp'tan Yazın</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ İLETİŞİM / KONUM ============ -->
+    <section class="contact section" id="iletisim">
+        <div class="container">
+            <div class="section__head reveal">
+                <p class="section__eyebrow">İletişim & Konum</p>
+                <h2 class="section__title">Bizi <span class="text-accent">Ziyaret Edin</span></h2>
+                <p class="section__lead">Mağazamız şehir merkezinde, ulaşımı kolay bir konumda. Ürünleri yakından görmek için sizi bekliyoruz.</p>
+            </div>
+
+            <div class="contact__grid">
+                <div class="contact__info reveal">
+                    <div class="info-card">
+                        <span class="info-card__icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <div>
+                            <h3>Mağaza Adresi</h3>
+                            <p>Atatürk Caddesi No: 142<br>Kat: 1, Dükkan: 5<br>[İlçe/İl], 34000</p>
+                            <a href="https://maps.google.com/?q=Atatürk+Cad+No+142+İstanbul" target="_blank" rel="noopener" class="info-card__link">Yol Tarifi Al <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-card__icon"><i class="fa-solid fa-phone-volume"></i></span>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p><a href="tel:+902120000000">0212 000 00 00</a><br><a href="tel:+905320000000">0532 000 00 00</a></p>
+                            <a href="https://wa.me/902120000000" target="_blank" rel="noopener" class="info-card__link"><i class="fa-brands fa-whatsapp"></i> WhatsApp ile ulaşın</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-card__icon"><i class="fa-regular fa-clock"></i></span>
+                        <div>
+                            <h3>Çalışma Saatleri</h3>
+                            <p><span>Pazartesi – Cuma</span> 08:30 – 19:00<br><span>Cumartesi</span> 09:00 – 17:00<br><span>Pazar</span> Kapalı</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-card__icon"><i class="fa-solid fa-envelope"></i></span>
+                        <div>
+                            <h3>E-posta</h3>
+                            <p><a href="mailto:info@dukkanadi.com">info@dukkanadi.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__map reveal">
+                    <iframe
+                        title="Mağaza Konumu"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=28.97%2C41.00%2C29.03%2C41.03&amp;layer=mapnik"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.google.com/?q=Atatürk+Cad+No+142+İstanbul" target="_blank" rel="noopener" class="contact__map-btn"><i class="fa-solid fa-diamond-turn-right"></i> Google Haritalar'da Aç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col footer__col--brand">
+                <a href="#anasayfa" class="brand brand--light">
+                    <span class="brand__mark"><i class="fa-solid fa-heart-pulse"></i></span>
+                    <span class="brand__text">
+                        <span class="brand__name">DÜKKAN ADI</span>
+                        <span class="brand__sub">Medikal & Sağlık Ürünleri</span>
+                    </span>
+                </a>
+                <p>1998'den bu yana medikal cihaz ve sağlık ürünlerinde güvenilir adresiniz. Doğru ürün, doğru bilgi, doğru hizmet.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/902120000000" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Kategoriler</h4>
+                <ul>
+                    <li><a href="#urunler">Medikal Cihazlar</a></li>
+                    <li><a href="#urunler">Ortopedi & Protez</a></li>
+                    <li><a href="#urunler">Evde Bakım</a></li>
+                    <li><a href="#urunler">Sarf Malzemeleri</a></li>
+                    <li><a href="#urunler">Anne & Bebek</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Kurumsal</h4>
+                <ul>
+                    <li><a href="#neden-biz">Hakkımızda</a></li>
+                    <li><a href="#neden-biz">Neden Biz</a></li>
+                    <li><a href="#kategoriler">Ürünler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>İletişim</h4>
+                <ul class="footer__contact">
+                    <li><i class="fa-solid fa-location-dot"></i> Atatürk Cad. No: 142, İstanbul</li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+902120000000">0212 000 00 00</a></li>
+                    <li><i class="fa-regular fa-clock"></i> Hafta içi 08:30–19:00</li>
+                </ul>
+                <a href="#iletisim" class="btn btn--primary btn--sm">Bize Ulaşın</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container footer__bottom-inner">
+                <p>© <span id="year"></span> [DÜKKAN ADI]. Tüm hakları saklıdır.</p>
+                <p>Fiyatlar bilgilendirme amaçlıdır, satış için mağazamızı ziyaret ediniz.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ WHATSAPP FLOATING ============ -->
+    <a href="https://wa.me/902120000000" class="wa-float" aria-label="WhatsApp ile yazın" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="to-top" id="toTop" aria-label="Yukarı çık"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
